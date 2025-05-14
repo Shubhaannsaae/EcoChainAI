@@ -1,0 +1,223 @@
+/* General Styles for Dark Mode */
+body {
+    color: #e0e0e0; /* Light grey text */
+    background-color: #121212; /* Even darker background for body */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff; /* White headings */
+    margin-bottom: 0.75em; /* Add some space below headings */
+}
+
+/* Streamlit Components */
+.stApp {
+    background-color: #1e1e1e; /* Main app area background */
+    /* padding: 1rem 2rem; */ /* Adjusted later */
+}
+
+.stButton>button {
+    background-color: #4CAF50; /* Green buttons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.stButton>button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    transform: translateY(-1px); /* Slight lift effect */
+}
+
+.stTextInput>div>div>input, .stTextArea>div>div>textarea {
+    background-color: #333333; /* Darker input fields */
+    color: #e0e0e0;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 10px 14px; /* Slightly increase padding */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stTextInput>div>div>input:focus, .stTextArea>div>div>textarea:focus {
+    border-color: #4CAF50; /* Highlight border on focus */
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.3); /* Add focus ring */
+    outline: none; /* Remove default outline */
+}
+
+.stDataFrame, .stTable {
+    background-color: #2a2a2a; /* Slightly lighter background for tables */
+    border: 1px solid #444444;
+    border-radius: 8px;
+}
+
+.stMetric {
+    background-color: #2a2a2a;
+    border: 1px solid #444444;
+    border-radius: 8px;
+    padding: 20px; /* Increase padding */
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stMetric:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stMetric > label {
+    color: #aaaaaa; /* Lighter grey for metric labels */
+}
+
+.stMetric > div {
+    color: #ffffff; /* White for metric values */
+    font-size: 1.75em; /* Slightly larger metric value */
+    font-weight: bold;
+}
+
+/* Sidebar Styles */
+.css-1d391kg {
+    background-color: #252526; /* Slightly different dark for sidebar */
+    border-right: 1px solid #444444;
+    padding-top: 1rem; /* Add padding at the top */
+}
+
+.css-1d391kg h1, .css-1d391kg h2, .css-1d391kg h3 {
+    margin-left: 1rem; /* Indent sidebar titles slightly */
+}
+
+.css-1d391kg .stRadio > label {
+    color: #e0e0e0;
+    padding: 0.5rem 1rem; /* Add padding to radio labels */
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 0.25rem;
+}
+
+.css-1d391kg .stRadio > label:hover {
+    background-color: #3a3a3d; /* Hover effect for sidebar items */
+}
+
+/* Style selected radio button */
+.css-1d391kg .stRadio [data-baseweb="radio"] span:first-of-type {
+    background-color: #4CAF50 !important; /* Use accent color for selected */
+    border-color: #4CAF50 !important;
+}
+
+
+.css-1d391kg .stSelectbox > div > div {
+    background-color: #333333;
+    color: #e0e0e0;
+    border: 1px solid #555555; /* Add border to selectbox */
+}
+
+/* Plotly Chart Background */
+.plotly-chart {
+    background-color: transparent !important; /* Make chart background transparent */
+}
+
+/* Custom Card Style (Example - can be applied using st.markdown) */
+.custom-card {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px; /* Increased spacing below cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Improve spacing for elements */
+div[data-testid="stVerticalBlock"] > div {
+    margin-bottom: 1.25rem; /* Slightly increase space between vertical elements */
+}
+
+/* Expander Styles */
+details {
+    border: 1px solid #444444;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background-color: #2a2a2a;
+}
+
+details > summary {
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: #e0e0e0;
+    background-color: #333333;
+    border-radius: 8px 8px 0 0; /* Round top corners */
+    transition: background-color 0.2s ease;
+}
+
+details > summary:hover {
+    background-color: #3a3a3d;
+}
+
+details[open] > summary {
+    border-bottom: 1px solid #444444;
+}
+
+.streamlit-expanderContent {
+    padding: 1rem;
+    border-top: none; /* Remove default top border */
+}
+
+/* Tab Styles */
+div[data-baseweb="tab-list"] {
+    background-color: #252526;
+    border-bottom: 2px solid #4CAF50; /* Accent border */
+    padding: 0 0.5rem;
+}
+
+button[data-baseweb="tab"] {
+    background-color: transparent;
+    color: #aaaaaa;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    font-weight: 500;
+    border-bottom: 2px solid transparent; /* Placeholder for selected state */
+    margin-bottom: -2px; /* Align with the bottom border */
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+button[data-baseweb="tab"]:hover {
+    color: #ffffff;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] {
+    color: #ffffff;
+    border-bottom-color: #4CAF50; /* Highlight selected tab */
+    font-weight: bold;
+}
+
+/* General Container/Block Styling */
+div[data-testid="stVerticalBlock"],
+div[data-testid="stHorizontalBlock"] {
+    /* border: 1px solid #333; padding: 1rem; border-radius: 4px; */
+}
+
+/* Adjust main content padding */
+.main .block-container {
+    padding-top: 2rem; /* Add more space at the top */
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/* Add some subtle animation to elements */
+.stAlert, .stMetric, .custom-card, details {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
