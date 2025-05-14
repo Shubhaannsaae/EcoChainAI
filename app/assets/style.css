@@ -1,164 +1,186 @@
 /* General Styles for Dark Mode */
 body {
-    color: #e0e0e0; /* Light grey text */
-    background-color: #121212; /* Even darker background for body */
+    color: #fff;
+    background-color: #101820;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.7;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-    color: #ffffff; /* White headings */
-    margin-bottom: 0.75em; /* Add some space below headings */
+    color: #ffd700;
+    font-weight: 700;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.18);
+    margin-bottom: 0.75em;
 }
 
 /* Streamlit Components */
 .stApp {
-    background-color: #1e1e1e; /* Main app area background */
-    /* padding: 1rem 2rem; */ /* Adjusted later */
+    background-color: #181c24;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    padding: 2rem 3rem;
 }
 
 .stButton>button {
-    background-color: #4CAF50; /* Green buttons */
-    color: white;
+    background-color: #0078d7;
+    color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 28px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 6px 3px;
     cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.22);
 }
 
 .stButton>button:hover {
-    background-color: #45a049; /* Darker green on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
-    transform: translateY(-1px); /* Slight lift effect */
+    background-color: #005fa3;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.38);
+    transform: translateY(-2px) scale(1.04);
 }
 
 .stTextInput>div>div>input, .stTextArea>div>div>textarea {
-    background-color: #333333; /* Darker input fields */
-    color: #e0e0e0;
-    border: 1px solid #555555;
-    border-radius: 4px;
-    padding: 10px 14px; /* Slightly increase padding */
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background-color: #23272e;
+    color: #fff;
+    border: 2px solid #0078d7;
+    border-radius: 6px;
+    padding: 12px 18px;
+    font-size: 17px;
+    font-weight: 500;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .stTextInput>div>div>input:focus, .stTextArea>div>div>textarea:focus {
-    border-color: #4CAF50; /* Highlight border on focus */
-    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.3); /* Add focus ring */
-    outline: none; /* Remove default outline */
+    border-color: #ffd700;
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.22);
+    outline: none;
 }
 
 .stDataFrame, .stTable {
-    background-color: #2a2a2a; /* Slightly lighter background for tables */
-    border: 1px solid #444444;
-    border-radius: 8px;
+    background-color: #23272e;
+    border: 2px solid #0078d7;
+    border-radius: 10px;
+    font-size: 17px;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.13);
 }
 
 .stMetric {
-    background-color: #2a2a2a;
-    border: 1px solid #444444;
-    border-radius: 8px;
-    padding: 20px; /* Increase padding */
+    background-color: #23272e;
+    border: 2px solid #ffd700;
+    border-radius: 12px;
+    padding: 28px;
     text-align: center;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .stMetric:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
 }
 
 .stMetric > label {
-    color: #aaaaaa; /* Lighter grey for metric labels */
+    color: #ffd700;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 0.01em;
 }
 
 .stMetric > div {
-    color: #ffffff; /* White for metric values */
-    font-size: 1.75em; /* Slightly larger metric value */
+    color: #fff;
+    font-size: 2.1em;
     font-weight: bold;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
 
 /* Sidebar Styles */
 .css-1d391kg {
-    background-color: #252526; /* Slightly different dark for sidebar */
-    border-right: 1px solid #444444;
-    padding-top: 1rem; /* Add padding at the top */
+    background-color: #181c24;
+    border-right: 2px solid #0078d7;
+    padding-top: 1.5rem;
+    border-radius: 0 16px 16px 0;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.10);
 }
 
 .css-1d391kg h1, .css-1d391kg h2, .css-1d391kg h3 {
-    margin-left: 1rem; /* Indent sidebar titles slightly */
+    margin-left: 1rem;
 }
 
 .css-1d391kg .stRadio > label {
-    color: #e0e0e0;
-    padding: 0.5rem 1rem; /* Add padding to radio labels */
-    display: block;
-    border-radius: 4px;
-    margin-bottom: 0.25rem;
+    color: #f5f5f5;
+    padding: 0.5rem 1rem;
 }
 
 .css-1d391kg .stRadio > label:hover {
-    background-color: #3a3a3d; /* Hover effect for sidebar items */
+    background-color: #2d3a4d;
 }
 
 /* Style selected radio button */
 .css-1d391kg .stRadio [data-baseweb="radio"] span:first-of-type {
-    background-color: #4CAF50 !important; /* Use accent color for selected */
-    border-color: #4CAF50 !important;
+    background-color: #ffd700 !important;
+    border-color: #ffd700 !important;
 }
 
 
 .css-1d391kg .stSelectbox > div > div {
-    background-color: #333333;
-    color: #e0e0e0;
-    border: 1px solid #555555; /* Add border to selectbox */
+    background-color: #23272e;
+    color: #f5f5f5;
+    border: 1.5px solid #0078d7;
 }
 
 /* Plotly Chart Background */
 .plotly-chart {
-    background-color: transparent !important; /* Make chart background transparent */
+    background-color: transparent !important;
 }
 
 /* Custom Card Style (Example - can be applied using st.markdown) */
 .custom-card {
-    background-color: #2a2a2a;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px; /* Increased spacing below cards */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #23272e;
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22);
 }
 
 /* Improve spacing for elements */
 div[data-testid="stVerticalBlock"] > div {
-    margin-bottom: 1.25rem; /* Slightly increase space between vertical elements */
+    margin-bottom: 1.75rem;
 }
 
 /* Expander Styles */
 details {
-    border: 1px solid #444444;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    background-color: #2a2a2a;
+    border: 2px solid #ffd700;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    background-color: #23272e;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 
 details > summary {
-    padding: 1rem;
+    padding: 1.2rem;
     cursor: pointer;
     font-weight: bold;
-    color: #e0e0e0;
-    background-color: #333333;
-    border-radius: 8px 8px 0 0; /* Round top corners */
-    transition: background-color 0.2s ease;
+    color: #ffd700;
+    background-color: #23272e;
+    border-radius: 12px 12px 0 0;
+    font-size: 1.15em;
+    transition: background-color 0.2s;
 }
 
 details > summary:hover {
-    background-color: #3a3a3d;
+    background-color: #2d3a4d;
 }
 
 details[open] > summary {
@@ -167,35 +189,39 @@ details[open] > summary {
 
 .streamlit-expanderContent {
     padding: 1rem;
-    border-top: none; /* Remove default top border */
+    border-top: none;
 }
 
 /* Tab Styles */
 div[data-baseweb="tab-list"] {
-    background-color: #252526;
-    border-bottom: 2px solid #4CAF50; /* Accent border */
+    background-color: #181c24;
+    border-bottom: 3px solid #ffd700;
     padding: 0 0.5rem;
+    border-radius: 8px 8px 0 0;
 }
 
 button[data-baseweb="tab"] {
     background-color: transparent;
-    color: #aaaaaa;
+    color: #ffd700;
     border: none;
-    padding: 0.75rem 1.25rem;
-    font-weight: 500;
-    border-bottom: 2px solid transparent; /* Placeholder for selected state */
-    margin-bottom: -2px; /* Align with the bottom border */
-    transition: color 0.2s ease, border-color 0.2s ease;
+    padding: 1rem 1.5rem;
+    font-weight: 700;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+    font-size: 1.08em;
+    transition: color 0.2s, border-color 0.2s;
 }
 
 button[data-baseweb="tab"]:hover {
-    color: #ffffff;
+    color: #fff;
+    background-color: #23272e;
 }
 
 button[data-baseweb="tab"][aria-selected="true"] {
-    color: #ffffff;
-    border-bottom-color: #4CAF50; /* Highlight selected tab */
+    color: #fff;
+    border-bottom-color: #0078d7;
     font-weight: bold;
+    background-color: #23272e;
 }
 
 /* General Container/Block Styling */
