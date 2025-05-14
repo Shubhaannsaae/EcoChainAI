@@ -108,6 +108,8 @@ cython_debug/
 
 # Environment variables
 .env
+venv/
+tests/
 
 # Logs
 *.log
