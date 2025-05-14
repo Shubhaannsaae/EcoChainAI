@@ -1,0 +1,39 @@
+# Core dependencies
+streamlit==1.32.2
+pandas==2.2.2
+numpy==1.26.4
+python-dotenv==1.0.1
+requests==2.31.0
+fastapi==0.110.2
+uvicorn==0.29.0
+
+# AI and ML
+scikit-learn==1.4.2
+anthropic==0.21.3
+openai==1.23.6
+transformers==4.40.2
+sentence-transformers==2.6.1
+torch==2.3.0
+
+# Data visualization
+plotly==5.22.0
+matplotlib==3.8.4
+seaborn==0.13.2
+
+# API clients
+# climatiq==0.2.1
+# epa-python==0.1.0
+# carbon-interface==0.1.2
+
+# Database
+sqlalchemy==2.0.29
+psycopg2-binary==2.9.9
+# sqlite3 is included with Python, no need to specify
+
+# Reporting
+reportlab==4.0.8
+pdfkit==1.0.0
+python-docx==1.1.0
+
+# Testing
+pytest==8.2.0
