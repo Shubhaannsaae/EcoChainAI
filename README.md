@@ -27,8 +27,8 @@ Visit our live demo at [https://supply-chain-optimizer.streamlit.app](https://su
 
 - **Frontend**: Streamlit
 - **Backend**: Python, FastAPI
-- **AI/ML**: Claude 3.5, LLaMA-3, Scikit-learn
-- **APIs**: Climatiq, EPA Envirofacts, Carbon Interface, OpenCorporates
+- **AI/ML**: Claude 3.5, GPT-4 Turbo, Scikit-learn
+- **APIs**: Climatiq, EPA Envirofacts, Carbon Interface
 - **Data Processing**: Pandas, NumPy
 - **Reporting**: Matplotlib, Plotly, ReportLab
 
@@ -38,4 +38,4 @@ MIT
 
 ## 🤝 Contributors
 
-- [Your Name](https://github.com/yourusername)
+- [Shubhaannsaae](https://github.com/Shubhaannsaae)
